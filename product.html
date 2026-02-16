@@ -78,37 +78,13 @@
         <a href="index.html" class="text-2xl font-bold text-indigo-600">SwiftCart</a>
       </div>
       <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1 gap-8">
-          <li>
-            <a
-              href="index.html"
-              class="text-gray-700 hover:text-indigo-600 font-medium"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#product"
-              class="text-gray-700 hover:text-indigo-600 font-medium"
-              >Products</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              class="text-gray-700 hover:text-indigo-600 font-medium"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              class="text-gray-700 hover:text-indigo-600 font-medium"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
+            <ul class="menu menu-horizontal px-1 gap-8">
+                <li><a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a></li>
+                <li><a href="products.html" class="text-indigo-600 font-semibold">Products</a></li>
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium">About</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a></li>
+            </ul>
+        </div>
       <div class="navbar-end">
         <!-- Shopping Trolly -->
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -135,33 +111,23 @@
 
     <!-- Products Section -->
     <section class="py-16 px-6 lg:px-20">
-      <div class="max-w-7xl mx-auto">
-        <!-- Header -->
-        <h1 class="text-4xl font-bold text-gray-900 text-center mb-8">
-          Our Products
-        </h1>
-
-        <!-- Category Filter -->
-        <div id="categoryButtons" class="flex flex-wrap justify-center gap-3 mb-12">
-            <div>
-                <button class="category-btn active px-6 py-2 rounded-full border border-gray-300 text-sm font-medium hover:bg-indigo-600 hover:text-white hover:border-indigo-600" data-category="all">
-                All
-                </button>
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <h1 class="text-4xl font-bold text-gray-900 text-center mb-8">Our Products</h1>
+            
+            <!-- Category Filter -->
+            <div id="categoryButtons" class="flex flex-wrap justify-center gap-3 mb-12">
+                <div class="spinner"></div>
+            </div>
+            
+            <!-- Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="col-span-full text-center py-8">
+                    <div class="spinner"></div>
+                    <p class="mt-4 text-gray-600">Loading products...</p>
+                </div>
             </div>
         </div>
-
-        <!-- Products Grid -->
-        <div
-          id="productsGrid"
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-        >
-          <!-- Loading Spinner -->
-          <div class="col-span-full text-center py-8">
-            <div class="spinner"></div>
-            <p class="mt-4 text-gray-600">Loading products...</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Product Details Modal -->
