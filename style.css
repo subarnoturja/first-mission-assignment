@@ -1,3 +1,12 @@
 *{
     font-family: "Inter", sans-serif;
 }
+
+.hero-section {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./assets/banner-image.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
