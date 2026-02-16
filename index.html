@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SwiftCart - Best Collection For You</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- Tailwind & DaisyUI -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -19,7 +20,13 @@
       rel="stylesheet"
     />
     <!-- Font Awesome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Navbar -->
@@ -127,7 +134,7 @@
     </div>
 
     <!-- Banner Section -->
-     <section
+    <section
       id="home"
       class="hero-section flex items-center justify-center lg:justify-start px-6 lg:px-20"
     >
@@ -148,7 +155,7 @@
     </section>
 
     <!-- Why Choose Us Section -->
-     <section id="about" class="py-20 px-6 lg:px-20 bg-gray-200">
+    <section id="about" class="py-20 px-6 lg:px-20 bg-gray-200">
       <div class="max-w-7xl mx-auto">
         <h2
           class="text-4xl font-bold text-center text-gray-900 mb-3 fade-in-up"
@@ -161,10 +168,14 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Feature 1 -->
-          <div class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl">    
-            <div class="absolute -mt-14 border-3 border-white rounded-lg bg-blue-100 p-2">
-                <i class="fa-regular fa-truck text-blue-700"></i>
-            </div>      
+          <div
+            class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl"
+          >
+            <div
+              class="absolute -mt-14 -ml-3 border-3 border-white rounded-lg bg-blue-100 p-2"
+            >
+              <i class="fa-regular fa-truck fa-lg text-blue-700"></i>
+            </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-3">
               Fast Delivery
             </h3>
@@ -175,10 +186,14 @@
           </div>
 
           <!-- Feature 2 -->
-          <div class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl">
-            <div class="absolute -mt-14 border-3 border-white rounded-lg bg-blue-100 p-2">
-                <i class="fa-regular fa-headphones text-blue-700"></i>
-            </div> 
+          <div
+            class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl"
+          >
+            <div
+              class="absolute -mt-14 -ml-3 border-3 border-white rounded-lg bg-blue-100 p-2"
+            >
+              <i class="fa-regular fa-headphones fa-lg text-blue-700"></i>
+            </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-3">
               24/7 Support
             </h3>
@@ -188,10 +203,14 @@
           </div>
 
           <!-- Feature 3 -->
-          <div class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl">
-            <div class="absolute -mt-14 border-3 border-white rounded-lg bg-blue-100 p-2">
-                <i class="fa-regular fa-square-check text-blue-700"></i>
-            </div> 
+          <div
+            class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl"
+          >
+            <div
+              class="absolute -mt-14 -ml-3 border-3 border-white rounded-lg bg-blue-100 p-2"
+            >
+              <i class="fa-regular fa-square-check fa-lg text-blue-700"></i>
+            </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-3">
               Secure Payment
             </h3>
@@ -202,10 +221,14 @@
           </div>
 
           <!-- Feature 4 -->
-          <div class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl">
-            <div class="absolute -mt-14 border-3 border-white rounded-lg bg-blue-100 p-2">
-                <i class="fa-solid fa-arrows-rotate text-blue-700"></i>
-            </div> 
+          <div
+            class="text-left bg-white p-10 fade-in-up delay-200 border border-white rounded-xl"
+          >
+            <div
+              class="absolute -mt-14 -ml-3 border-3 border-white rounded-lg bg-blue-100 p-2"
+            >
+              <i class="fa-solid fa-arrows-rotate fa-lg text-blue-700"></i>
+            </div>
             <h3 class="text-xl font-semibold text-gray-900 mb-3">
               Easy Returns
             </h3>
@@ -217,8 +240,253 @@
       </div>
     </section>
 
+    <!-- Trending Now Section -->
+    <section id="products" class="py-20 px-6 lg:px-20 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 fade-in-up">
+          Trending Now
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Product 1 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden border border-gray-200 fade-in-up delay-100"
+          >
+            <div
+              class="relative bg-gray-100 h-80 flex items-center justify-center"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop"
+                alt="Fjallraven Backpack"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-2">
+                <span
+                  class="badge bg-indigo-100 text-indigo-600 border-none text-xs"
+                  >Men's Clothing</span
+                >
+                <div class="flex items-center text-sm text-gray-600">
+                  <span class="text-yellow-500 mr-1">⭐</span>
+                  <span class="font-medium">3.8</span>
+                  <span class="text-gray-400 ml-1">(120)</span>
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Fjallraven - Foldsack No. 1 Backpack, ...
+              </h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$109.95</p>
+              <div class="flex gap-3">
+                <button
+                  class="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                  Details
+                </button>
+                <button
+                  class="btn bg-indigo-600 hover:bg-indigo-700 border-none text-white flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden border border-gray-200 fade-in-up delay-200"
+          >
+            <div
+              class="relative bg-gray-100 h-80 flex items-center justify-center"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=400&h=400&fit=crop"
+                alt="Men's T-Shirt"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-2">
+                <span
+                  class="badge bg-indigo-100 text-indigo-600 border-none text-xs"
+                  >Men's Clothing</span
+                >
+                <div class="flex items-center text-sm text-gray-600">
+                  <span class="text-yellow-500 mr-1">⭐</span>
+                  <span class="font-medium">4.1</span>
+                  <span class="text-gray-400 ml-1">(259)</span>
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Mens Casual Premium Slim Fit T-Shirts
+              </h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$22.3</p>
+              <div class="flex gap-3">
+                <button
+                  class="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                  Details
+                </button>
+                <button
+                  class="btn bg-indigo-600 hover:bg-indigo-700 border-none text-white flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-card bg-white rounded-lg overflow-hidden border border-gray-200 fade-in-up delay-300"
+          >
+            <div
+              class="relative bg-gray-100 h-80 flex items-center justify-center"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop"
+                alt="Men's Jacket"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-2">
+                <span
+                  class="badge bg-indigo-100 text-indigo-600 border-none text-xs"
+                  >Men's Clothing</span
+                >
+                <div class="flex items-center text-sm text-gray-600">
+                  <span class="text-yellow-500 mr-1">⭐</span>
+                  <span class="font-medium">4.7</span>
+                  <span class="text-gray-400 ml-1">(500)</span>
+                </div>
+              </div>
+              <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                Mens Cotton Jacket
+              </h3>
+              <p class="text-2xl font-bold text-gray-900 mb-4">$55.99</p>
+              <div class="flex gap-3">
+                <button
+                  class="btn btn-outline border-gray-300 text-gray-700 hover:bg-gray-50 flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                  Details
+                </button>
+                <button
+                  class="btn bg-indigo-600 hover:bg-indigo-700 border-none text-white flex-1 h-11 min-h-0"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4 mr-1"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                  Add
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-     <footer class="bg-gray-900 text-white py-16 px-6 lg:px-20">
+    <footer class="bg-gray-900 text-white py-16 px-6 lg:px-20">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <!-- Brand Column -->
