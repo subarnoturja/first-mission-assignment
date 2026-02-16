@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products - SwiftCart</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>SwiftCart - Best Collection For You</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Tailwind & DaisyUI -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
       type="text/css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="bg-white">
     <!-- Navbar -->
-    <nav class="navbar bg-white border-b border-gray-200 px-6 lg:px-20 py-4">
+    <div class="navbar bg-white border-b border-gray-200 px-6 lg:px-20 py-4">
       <div class="navbar-start">
         <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -36,10 +48,10 @@
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          </label>
+          </div>
           <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52"
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
               <a href="index.html" class="text-gray-700 hover:text-indigo-600"
@@ -47,7 +59,7 @@
               >
             </li>
             <li>
-              <a href="products.html" class="text-indigo-600 font-semibold"
+              <a href="#product" class="text-gray-700 hover:text-indigo-600"
                 >Products</a
               >
             </li>
@@ -63,11 +75,8 @@
             </li>
           </ul>
         </div>
-        <a href="index.html" class="text-2xl font-bold text-indigo-600"
-          >SwiftCart</a
-        >
+        <a href="index.html" class="text-2xl font-bold text-indigo-600">SwiftCart</a>
       </div>
-
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 gap-8">
           <li>
@@ -78,7 +87,9 @@
             >
           </li>
           <li>
-            <a href="products.html" class="text-indigo-600 font-semibold"
+            <a
+              href="#product"
+              class="text-gray-700 hover:text-indigo-600 font-medium"
               >Products</a
             >
           </li>
@@ -98,26 +109,29 @@
           </li>
         </ul>
       </div>
-
       <div class="navbar-end">
-        <button class="btn btn-ghost btn-circle indicator">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-gray-700"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-            />
-          </svg>
-        </button>
+        <!-- Shopping Trolly -->
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <div class="indicator">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+              />
+            </svg>
+            <span class="badge badge-sm indicator-item">0</span>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
 
     <!-- Products Section -->
     <section class="py-16 px-6 lg:px-20">
@@ -128,11 +142,12 @@
         </h1>
 
         <!-- Category Filter -->
-        <div
-          id="categoryButtons"
-          class="flex flex-wrap justify-center gap-3 mb-12"
-        >
-          <!-- <div class="spinner"></div> -->
+        <div id="categoryButtons" class="flex flex-wrap justify-center gap-3 mb-12">
+            <div>
+                <button class="category-btn active px-6 py-2 rounded-full border border-gray-300 text-sm font-medium hover:bg-indigo-600 hover:text-white hover:border-indigo-600" data-category="all">
+                All
+                </button>
+            </div>
         </div>
 
         <!-- Products Grid -->
@@ -140,6 +155,7 @@
           id="productsGrid"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
+          <!-- Loading Spinner -->
           <div class="col-span-full text-center py-8">
             <div class="spinner"></div>
             <p class="mt-4 text-gray-600">Loading products...</p>
@@ -147,6 +163,28 @@
         </div>
       </div>
     </section>
+
+    <!-- Product Details Modal -->
+    <dialog id="productModal" class="modal">
+      <div class="modal-box max-w-4xl">
+        <form method="dialog">
+          <button
+            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
+          >
+            ✕
+          </button>
+        </form>
+        <div
+          id="modalContent"
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4"
+        >
+          <!-- Modal content will be loaded here -->
+        </div>
+      </div>
+      <form method="dialog" class="modal-backdrop">
+        <button>close</button>
+      </form>
+    </dialog>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16 px-6 lg:px-20">
@@ -167,14 +205,14 @@
             <ul class="space-y-2">
               <li>
                 <a
-                  href="swiftcart.html"
+                  href="#home"
                   class="text-gray-400 hover:text-white transition-colors text-sm"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="products.html"
+                  href="#products"
                   class="text-gray-400 hover:text-white transition-colors text-sm"
                   >Products</a
                 >
@@ -262,6 +300,7 @@
           <p class="text-gray-400 text-sm text-center">
             © 2025 SwiftCart, Inc. All rights reserved.
           </p>
+          <!-- Social Media Icons -->
           <div class="flex gap-4">
             <a
               href="#"
@@ -343,27 +382,6 @@
       </div>
     </footer>
 
-    <!-- Product Details Modal -->
-    <dialog id="productModal" class="modal">
-      <div class="modal-box max-w-4xl">
-        <form method="dialog">
-          <button
-            class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
-          >
-            ✕
-          </button>
-        </form>
-        <div
-          id="modalContent"
-          class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4"
-        >
-          <!-- Modal content will be loaded here -->
-        </div>
-      </div>
-      <form method="dialog" class="modal-backdrop">
-        <button>close</button>
-      </form>
-    </dialog>
 
     <script src="script.js"></script>
   </body>
